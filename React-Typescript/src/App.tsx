@@ -8,7 +8,7 @@ import Destructuring, {Category} from './components/Destructuring';
 
 import State from './components/State';
 
-import Context from './components/context';
+import Context from './components/Context';
 
 
 type textOrNull = string | null
