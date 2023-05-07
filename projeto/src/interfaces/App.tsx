@@ -3,13 +3,20 @@ import styles from './App.module.css'
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import TaskForm from '../components/TaskForm';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <main className={styles.main}>
-        <h1>Conteudo</h1>
+        <div>
+          <h2>O que voce vai fazer?</h2>
+          <TaskForm btnText='adicionar'/>
+        </div>
+        <div>
+          <h2>Suas tarefas:</h2>
+        </div>
       </main>
       <Footer />
     </div>
