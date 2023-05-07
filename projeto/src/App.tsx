@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './App.module.css'
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import TaskForm from '../components/TaskForm';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import TaskForm from './components/TaskForm';
 
 function App() {
   return (
