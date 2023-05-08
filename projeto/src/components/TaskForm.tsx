@@ -31,7 +31,6 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
         };
       
 
-  
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         if (e.target.name === "title") {
@@ -41,6 +40,7 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
         }
       };
     
+      
     return (
         <form onSubmit={addTaskHandler} className={styles.form}>
           <div className={styles.input_container}>
@@ -49,8 +49,8 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
               type="text"
               name="title"
               placeholder="Título da tarefa"
-              onSubmit={handleChange}
               value={title}
+              onSubmit={handleChange}
               />
           </div>
           <div className={styles.input_container}>
@@ -59,8 +59,8 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
               type="number"
               name="difficulty"
               placeholder="Dificuldade da tarefa (1 a 5)"
-              onSubmit={handleChange}
               value={difficulty}
+              onSubmit={handleChange}
             />
           </div>
           <input type="submit" value={btnText} />
