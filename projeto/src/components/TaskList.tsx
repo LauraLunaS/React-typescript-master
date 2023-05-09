@@ -8,7 +8,7 @@ interface Props {
     handleDelete(title: string): void;
 }
 
-const TaskList = ({ taskList, handleDelete }: Props) => {
+const TaskList = ({ taskList,  handleDelete }: Props) => {
     return (
         <>
             {taskList.length > 0 ? (
