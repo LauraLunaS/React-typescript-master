@@ -7,17 +7,35 @@ interface Props {
     btnText: string;
     taskList: ITask[];
     setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
+    task?: ITask | null;
+    handleUpdate?(id: number, title: string, difficulty: number): void;
 }
 
-const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
+
+const TaskForm = ({btnText, taskList, setTaskList, task, handleUpdate}: Props) => {
 
     const [id, setId] = useState<number>(0);
     const [title, setTitle] = useState<string>("");
     const [difficulty, setDifficulty] = useState<number>(0);
 
+    useEffect(() => {
+      if (task) {
+        setId(task.id);
+        setTitle(task.title);
+        setDifficulty(task.difficulty);
+      }
+    }, [task]);
+
+
     const addTaskHandler = (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
+      console.log(handleUpdate);
 
+        if (handleUpdate) {
+          console.log(title);
+          console.log(difficulty);
+          handleUpdate(id, title, difficulty);
+        } else {
           const id = Math.floor(Math.random() * 1000);
   
           const newTask: ITask = { id, title, difficulty };
@@ -27,9 +45,8 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
           setTitle("");
           setDifficulty(0);
 
-          console.log(taskList);
         };
-      
+      }
 
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -50,7 +67,7 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
               name="title"
               placeholder="Título da tarefa"
               value={title}
-              onSubmit={handleChange}
+              onChange={handleChange}
               />
           </div>
           <div className={styles.input_container}>
@@ -60,7 +77,7 @@ const TaskForm = ({btnText, taskList, setTaskList}: Props) => {
               name="difficulty"
               placeholder="Dificuldade da tarefa (1 a 5)"
               value={difficulty}
-              onSubmit={handleChange}
+              onChange={handleChange}
             />
           </div>
           <input type="submit" value={btnText} />
