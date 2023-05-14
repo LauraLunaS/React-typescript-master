@@ -3,3 +3,22 @@
 2023-05-11 23:11:13:1113 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
 2023-05-11 23:22:39:2239 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
 2023-05-11 23:26:21:2621 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 21:16:08:168 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 21:18:42:1842 - [35mhttp[39m: [35mGET / 404 139 - 8.180 ms[39m
+[35m[39m
+2023-05-13 21:19:24:1924 - [35mhttp[39m: [35mGET /api//test 200 12 - 5.160 ms[39m
+[35m[39m
+2023-05-13 21:19:45:1945 - [35mhttp[39m: [35mPOST /api//movie 200 22 - 4.773 ms[39m
+[35m[39m
+2023-05-13 21:19:54:1954 - [35mhttp[39m: [35mGET / 404 139 - 1.855 ms[39m
+[35m[39m
+2023-05-13 21:19:59:1959 - [35mhttp[39m: [35mGET / 404 139 - 0.683 ms[39m
+[35m[39m
+2023-05-13 21:20:47:2047 - [35mhttp[39m: [35mPOST /api//movie 200 22 - 4.255 ms[39m
+[35m[39m
+2023-05-13 21:23:25:2325 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 21:23:57:2357 - [35mhttp[39m: [35mGET / 404 139 - 14.527 ms[39m
+[35m[39m
+2023-05-13 21:31:07:317 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 21:32:57:3257 - [35mhttp[39m: [35mPOST /api//movie 201 154 - 175.748 ms[39m
+[35m[39m
