@@ -22,3 +22,8 @@
 2023-05-13 21:31:07:317 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
 2023-05-13 21:32:57:3257 - [35mhttp[39m: [35mPOST /api//movie 201 154 - 175.748 ms[39m
 [35m[39m
+2023-05-13 22:46:28:4628 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 23:13:09:139 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 23:13:38:1338 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 23:14:52:1452 - [35mhttp[39m: [35mPOST /api//movie 422 187 - 27.462 ms[39m
+[35m[39m
