@@ -70,3 +70,6 @@
 [35m[39m
 2023-05-14 00:38:53:3853 - [35mhttp[39m: [35mGET /api//movie/64604c005590024390723904 200 369 - 184.957 ms[39m
 [35m[39m
+2023-05-14 00:43:07:437 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-14 00:45:23:4523 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-14 00:46:18:4618 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
