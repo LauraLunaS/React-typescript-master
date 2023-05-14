@@ -27,3 +27,18 @@
 2023-05-13 23:13:38:1338 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
 2023-05-13 23:14:52:1452 - [35mhttp[39m: [35mPOST /api//movie 422 187 - 27.462 ms[39m
 [35m[39m
+2023-05-13 23:32:18:3218 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 23:33:28:3328 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-13 23:38:46:3846 - [32minfo[39m: [32mErro no sistema: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Movie"[39m
+2023-05-13 23:41:38:4138 - [35mhttp[39m: [35mGET /api//movie/123 - - - - ms[39m
+[35m[39m
+2023-05-13 23:41:41:4141 - [32minfo[39m: [32mErro no sistema: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Movie"[39m
+2023-05-13 23:42:12:4212 - [35mhttp[39m: [35mGET /api//movie/123 - - - - ms[39m
+[35m[39m
+2023-05-13 23:48:33:4833 - [35mhttp[39m: [35mPOST /api//movie 201 369 - 609.453 ms[39m
+[35m[39m
+2023-05-13 23:48:54:4854 - [35mhttp[39m: [35mGET /api//movie/64604c005590024390723904 200 369 - 240.763 ms[39m
+[35m[39m
+2023-05-14 00:02:41:241 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-14 00:03:52:352 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-05-14 00:05:02:52 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
