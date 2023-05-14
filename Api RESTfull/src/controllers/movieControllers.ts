@@ -39,3 +39,24 @@ export async function createMovie(req: Request, res: Response) {
           Logger.info(`Erro no sistema: ${e.message}`);
         }
       }
+
+      export async function removeMovie(req: Request, res: Response) {
+        try {
+          const id = req.params.id;
+          const movie = await MovieModel.findById(id);
+      
+          if (!movie) {
+            return res.status(404).json({ error: "O filme não existe." });
+          }
+
+          await movie.delete();
+
+          return res.status(201).json({ msg: "Filme removido com sucesso!" });
+      
+
+        } catch (e: any) {
+          Logger.info(`Erro no sistema: ${e.message}`);
+          return res.status(500).json({ error: "Por favor, tente novamente mais tarde"})
+        }
+      }
+      
